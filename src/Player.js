@@ -5,22 +5,22 @@ export default class Player extends GameObject {
     super(game, 60, game.height - 80, 128, 128)
 
     this.image = new Image()
-    this.image.src = "./src/assets/franks_doge.png"
+    this.image.src = "./src/assets/SpriteSheet.png"
 
     this.speedX = 0
     this.speedY = 0
 
-    this.frameWidth = 100
-    this.frameHeight = 92
+    this.frameWidth = 64
+    this.frameHeight = 64
     this.frameX = 0
     this.frameY = 3
     this.flip = false
-    this.maxFrames = 7
+    this.maxFrames = 4
     this.fps = 20
     this.timer = 0
     this.interval = 1000 / this.fps
 
-    this.jumpSpeed = 10
+    this.jumpSpeed = 12
     this.grounded = true
   }
 
